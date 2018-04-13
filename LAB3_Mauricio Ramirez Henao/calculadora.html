@@ -5,7 +5,7 @@
 	<script src="calc_operations.js"></script>
 	<link href="styles.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
-	<script type="text/javascript" src="funciones.js"></script>
+	<script type="text/javascript" src="../javascript/funciones.js"></script>
 </head>
 <body>
 	<div id="calculator">
@@ -14,7 +14,7 @@
 				<input id="display" type="text" readonly="true"></input>
 			</div>
 			<div id="display-div1">
-				<input  type="text" name="valores" id="valores" onkeypress="return solonumeros(event)"></input>
+				<input  type="text" name="valores" id="valores" onkeypress="return solonumeros(event)"> </input>
 			</div>
 		</div>
 		
@@ -26,56 +26,56 @@
 					<button type="button" value="factorial">x!</button>
 				</div>
 				<div id="fila">
-					<button type="button" value="inversa">Inv</button>
-					<button type="button" value="sin">sin</button>
-					<button type="button" value="ln">ln</button>
+					<button type="button" value="inversa" onclick="inve();">Inv</button>
+					<button type="button" value="sin" onclick="seno();">sin</button>
+					<button type="button" value="ln" onclick="lognat();">ln</button>
 				</div>
 				<div id="fila">
-					<button type="button" value="pi">π</button>
-					<button type="button" value="cos">cos</button>
-					<button type="button" value="log">log</button>
+					<button type="button" value="3.1416" onclick="numero(value);">π</button>
+					<button type="button" value="cos" onclick="coseno();">cos</button>
+					<button type="button" value="log" onclick="logaritmo();" onclick="logaritmo();">log</button>
 				</div>
 				<div id="fila">
-					<button type="button" value="e">e</button>
-					<button type="button" value="tan">tan</button>
-					<button type="button" value="sqr">√</button>
+					<button type="button" value="e" onclick="euler();">e</button>
+					<button type="button" value="tan" onclick="tangente();">tan</button>
+					<button type="button" value="sqr" onclick="raizc();">√</button>
 				</div>
 				<div id="fila">
 					<button type="button" value="ans">Ans</button>
-					<button type="button" value="exp">EXP</button>
-					<button type="button" value="elevado">x<sub>y</sub></button>
+					<button type="button" value="exponente" onclick="exponente();">EXP</button>
+					<button type="button" value="elevado" onclick="elevado();">x<sub>y</sub></button>
 				</div>
 			</div>
 			<div id="general">
 				<div id="fila">
 					<button type="button" value="(">(</button>
 					<button type="button" value=")">)</button>
-					<button type="button" value="%">%</button>
-					<button type="button" value="borrar">CE</button>
+					<button type="button" value="%"onclick="porcent();">%</button>
+					<button type="button" value="borrar"onclick="borrar();">CE</button>
 				</div>
 				<div id="fila">
-					<button type="button" value="7"onkeypress="retornar(value)">7</button>
-					<button type="button" value="8">8</button>
-					<button type="button" value="9">9</button>
-					<button type="button" value="7">÷</button>
+					<button type="button" value="7" onclick="numero(value);">7</button>
+					<button type="button" value="8" onclick="numero(value);">8</button>
+					<button type="button" value="9" onclick="numero(value);">9</button>
+					<button type="button" value="/"onclick="operacion(value);">÷</button>
 				</div>
 				<div id="fila">
-					<button type="button" value="4">4</button>
-					<button type="button" value="5">5</button>
-					<button type="button" value="6">6</button>
-					<button type="button" value="*">x</button>
+					<button type="button" value="4" onclick="numero(value);">4</button>
+					<button type="button" value="5" onclick="numero(value);">5</button>
+					<button type="button" value="6" onclick="numero(value);">6</button>
+					<button type="button" value="*" onclick="operacion(value);">x</button>
 				</div>
 				<div id="fila">
-					<button type="button" value="1">1</button>
-					<button type="button" value="2">2</button>
-					<button type="button" value="3">3</button>
-					<button type="button" value="-">-</button>
+					<button type="button" value="1" onclick="numero(value);">1</button>
+					<button type="button" value="2" onclick="numero(value);">2</button>
+					<button type="button" value="3" onclick="numero(value);">3</button>
+					<button type="button" value="-" onclick="operacion(value);">-</button>
 				</div>
 				<div id="fila">
-					<button type="button" value="0">0</button>
-					<button type="button" value=".">.</button>
-					<button type="button" value="=">=</button>
-					<button type="button" value="+">+</button>
+					<button type="button" value="0" onclick="numero(value);">0</button>
+					<button type="button" value="." onclick="numero(value);">.</button>
+					<button type="button" value="=" onclick="igualar();">=</button>
+					<button type="button" value="+" onclick="operacion(value);">+</button>
 				</div>
 			</div>
 		</div>
