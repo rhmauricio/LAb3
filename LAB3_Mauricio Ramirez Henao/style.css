@@ -1,13 +1,30 @@
 
+@media screen{
+#calculator{
+	margin: 10%;
+}
+
+#datos{
+	margin-bottom:2%;
+}
+#display{
+	width: 90%;
+}
 #funciones{
 	float: left;
-	width:39%
+	width:40%;
 }
 #general{
 	float: left;
-	width:59%
+	width:60%
 	}
-	
-button{
-	width:100%
+#funciones button{
+	width: 30%;
+	height: 2em;
+}	
+#general button{
+	width:20% ;
+	height: 2em;
+}
+
 }
