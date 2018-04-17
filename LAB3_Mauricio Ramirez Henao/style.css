@@ -1,30 +1,99 @@
 
-@media screen{
+@@media screen{
+	body{
+		background:#000000;
+		color:white;
+	}
 #calculator{
+	float: left;
+	width:80%;
+	height:100%;
 	margin: 10%;
+	border: solid 1px;
+	background: #000000;
+	text-align: center;
+	padding:2%;
+	border-radius: 10px;
+	}
+#contendor{
+	text-align:right;
+	float:left;
+	width:96%;
+	height:40%;
+	height:80%;
+	padding:2%;
+}
+#datos{
+	border: solid 1px;
+	float:right;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	background: white;
+	color: black;
+	border-radius: 5px;
 }
 
-#datos{
-	margin-bottom:2%;
+#display-div1, #display-div0{
+	text-align: right;	
+	margin-right:5%;
 }
-#display{
-	width: 90%;
-}
+
 #funciones{
 	float: left;
 	width:40%;
 }
 #general{
 	float: left;
-	width:60%
+	width:60%;
+	padding:0%;
 	}
 #funciones button{
-	width: 30%;
+	float:left;
+	width: 33.33%;
 	height: 2em;
+	background:#414141;
+	color:white;
+	border-radius: 5px;
 }	
-#general button{
-	width:20% ;
-	height: 2em;
-}
 
+#general button{
+	float:left;
+	width:25% ;
+	height: 2em;
+	background:#000000;
+	color:white;
+	border-radius: 5px;
+	}
+
+button:hover {
+                box-shadow: inset 0 -70px 0 0 #949494 ;
+            }
+}
+#parentesisizq button{
+	background: #414141;
+}
+#parentesisder button{
+	background: #414141;
+}
+#porciento button{
+	background: #414141;
+}
+#borrar button{
+	background: #414141;
+}
+#division button{
+	background: #414141;
+}
+#multiplcacion button{
+	background: #414141;
+}
+#menos button{
+	background: #414141;
+}
+#mas button{
+	background: #414141;
+}
+#igual button{
+	background: red;
 }
