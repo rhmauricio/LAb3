@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
 	<title> Awesome calculator </title>
 	<script src="calc_operations.js"></script>
-	<link href="styles.css" type="text/css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../css/style.css" media="screen"/>
+	<link  href="styles.css" type="text/css" rel="stylesheet">
+	<link id="tema1" rel="stylesheet" type="text/css" href="../css/style1.css" media="screen"/>
 	<script type="text/javascript" src="../javascript/funciones.js"></script>
 </head>
 <body>
+	<div id="header">
+		<nav>
+			<ul class="nav">
+				<li><button value="1" onclick="cambiotema(value);" >Tema 1</button></li>	
+				<li><button value="2" onclick="cambiotema(value);">Tema 2</button></li>
+			</ul>
+		</nav>
+	</div>
 	<div id="calculator">
 		<div id="datos">
 			<div id="display-div0">
@@ -21,29 +29,29 @@
 		<div id="contendor">
 			<div id="funciones">
 				<div id="fila">
-					<button type="button" value="rad">Rad</button>
-					<button type="button" value="deg">Deg</button>
-					<button type="button" value="factorial">x!</button>
+					<div><button id="rad" type="button" value="rad" onclick="rad(value);">Rad</button></div>
+					<div><button id="deg" type="button" value="deg" onclick="rad(value);">Deg</button></div>
+					<button type="button" value="factorial" onclick="factorial();">x!</button>
 				</div>
 				<div id="fila">
 					<button type="button" value="inversa" onclick="inve();">Inv</button>
-					<button type="button" value="sin" onclick="seno();">sin</button>
-					<button type="button" value="ln" onclick="lognat();">ln</button>
+					<button id="arcsin"   type="button" value="sin" onclick="seno();">sin</button>
+					<button id="expodiez" type="button" value="ln" onclick="lognat();">ln</button>
 				</div>
 				<div id="fila">
 					<button type="button" value="3.1416" onclick="numero(value);">π</button>
-					<button type="button" value="cos" onclick="coseno();">cos</button>
-					<button type="button" value="log" onclick="logaritmo();" onclick="logaritmo();">log</button>
+					<button id="arccos" type="button" value="cos" onclick="coseno();">cos</button>
+					<button id="loginv" type="button" value="log" onclick="logaritmo();" onclick="logaritmo();">log</button>
 				</div>
 				<div id="fila">
-					<button type="button" value="e" onclick="euler();">e</button>
-					<button type="button" value="tan" onclick="tangente();">tan</button>
-					<button type="button" value="sqr" onclick="raizc();">√</button>
+					<button id="expinv" type="button" value="e" onclick="euler();">e</button>
+					<button id="arctan" type="button" value="tan" onclick="tangente();">tan</button>
+					<button id="razinv" type="button" value="sqr" onclick="raizc();">√</button>
 				</div>
 				<div id="fila">
 					<button type="button" value="ans">Ans</button>
 					<button type="button" value="exponente" onclick="exponente();">EXP</button>
-					<button type="button" value="elevado" onclick="elevado();">x<sub>y</sub></button>
+					<button id="elevinv" type="button" value="elevado" onclick="elevado();">x<sup>y</sup></button>
 				</div>
 			</div>
 			<div id="general">
