@@ -1,4 +1,4 @@
-//Declaracion de variables globales
+//Declaracion de variables globales 11:50
 
 x="0"; //guardar número en pantalla
 xi=1; //iniciar número en pantalla: 1=si; 0=no;
