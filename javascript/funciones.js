@@ -143,6 +143,7 @@ function inve() {
 	document.getElementById("arctan").innerHTML = "tan<sup>-1</sup>";
 	document.getElementById("razinv").innerHTML = "x<sup>2</sup>";
 	document.getElementById("elevinv").innerHTML = "<sup>y</sup>√x";	
+	document.getElementById("prueba").innerHTML = "Rnd<sup>-1</sup>";
 }
         
 		 
@@ -237,7 +238,18 @@ function elevado(){
 		nx=Number(x);
 		if(inverso==1){nx=Math.pow(nx);}
         else{nx=Math.pow(nx);}
-        x=String(nx);		 
+		x=String(nx);		
+		
+function ans(){
+		nx=Number(x);
+		if(inverso==1){nx=Math.random(nx);}
+		else{nx=sol;}
+		x=String(nx);		 
+		pantalla1.innerHTML=x;
+		igualar();
+		xi=1; 
+
+}
 
 }
 //Cambio de estilos
