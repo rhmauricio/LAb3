@@ -18,8 +18,6 @@ pantalla1=document.getElementById("display-div1");
 pantalla0.innerHTML="Ans = 0";
 pantalla1.innerHTML=0;
 document.getElementById("deg").style.backgroundColor = "green";
-
-
 };
 
 
@@ -101,6 +99,7 @@ function igualar() {
 			document.getElementById("arctan").innerHTML = "tan";
 			document.getElementById("razinv").innerHTML = "√";
 			document.getElementById("elevinv").innerHTML = "x<sup>y</sup>";
+			document.getElementById("prueba").innerHTML = "Ans";
 			inverso=0;
         }
  
@@ -143,7 +142,7 @@ function inve() {
 	document.getElementById("arctan").innerHTML = "tan<sup>-1</sup>";
 	document.getElementById("razinv").innerHTML = "x<sup>2</sup>";
 	document.getElementById("elevinv").innerHTML = "<sup>y</sup>√x";	
-	document.getElementById("prueba").innerHTML = "Rnd<sup>-1</sup>";
+	document.getElementById("prueba").innerHTML = "Rnd";
 }
         
 		 
@@ -238,9 +237,10 @@ function elevado(){
 		nx=Number(x);
 		if(inverso==1){nx=Math.pow(nx);}
         else{nx=Math.pow(nx);}
-		x=String(nx);		
+		x=String(nx);
+}		
 		
-function ans(){
+function funAns(){
 		nx=Number(x);
 		if(inverso==1){nx=Math.random(nx);}
 		else{nx=sol;}
@@ -248,10 +248,8 @@ function ans(){
 		pantalla1.innerHTML=x;
 		igualar();
 		xi=1; 
-
 }
 
-}
 //Cambio de estilos
 function cambiotema(tema){
 	temaglobal=tema;
